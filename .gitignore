@@ -1,2 +1,5 @@
+## bolt files
+.resource_types/
+modules/
 /bolt.yaml
 /inventory.yaml
