@@ -1,0 +1,19 @@
+Gemfile:
+  optional:
+    ':development':
+      - gem: 'generate-puppetfile'
+        version: '~> 1.0'
+
+'.gitignore': 
+  paths:
+    - '/inventory.yaml'
+    - '/bolt-modules'
+    - '.resource_types'
+    - '.ruby-version'
+'spec/spec_helper.rb':
+  coverage_report: true
+'.pdkignore':
+  paths:
+    - '/docs/'
+#    - 'Boltdir'
+#    - '---.bundle/'
