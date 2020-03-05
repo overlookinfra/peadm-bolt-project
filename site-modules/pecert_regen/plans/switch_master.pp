@@ -19,7 +19,7 @@ $certname = get_targets($nodes).map |$a| { $a.name }
     # Request a certificate from the master this command will fail so we set _catch_errors,
     # this will allow the plan to run without exiting with an error
       run_task('peadm::puppet_runonce', $nodes,
-        noop  =>  true,
+        noop          =>  true,
         _catch_errors => true
       )
 
@@ -33,7 +33,7 @@ $certname = get_targets($nodes).map |$a| { $a.name }
   # A certificate is requested and signed with autosign configurtiona and csr_attributes
   # If there is an issue with the agent the plan will exit with an error
     run_task('peadm::puppet_runonce', $nodes,
-      noop  =>  true,
+      noop          =>  true,
       _catch_errors => false
     )
 
